@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitOpticon - See the Work You'd Otherwise Miss</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="GitOpticon monitors your entire product lifecycle—from Jira epics to GitHub PRs—and tells your team what needs attention before it reaches production.">
+    <meta name="keywords" content="security governance, architecture governance, development lifecycle, Jira, GitHub, PR review, security automation">
+    <meta name="author" content="GitOpticon">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gitopticon.com/">
+    <meta property="og:title" content="GitOpticon - See the Work You'd Otherwise Miss">
+    <meta property="og:description" content="GitOpticon monitors your entire product lifecycle—from Jira epics to GitHub PRs—and tells your team what needs attention before it reaches production.">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="GitOpticon">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://gitopticon.com/">
+    <meta name="twitter:title" content="GitOpticon - See the Work You'd Otherwise Miss">
+    <meta name="twitter:description" content="GitOpticon monitors your entire product lifecycle—from Jira epics to GitHub PRs—and tells your team what needs attention before it reaches production.">
+    <meta name="twitter:image" content="">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://gitopticon.com/">
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "GitOpticon",
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Web",
+        "description": "Development lifecycle governance and security automation platform that monitors Jira and GitHub to surface what needs attention before it reaches production.",
+        "url": "https://gitopticon.com",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/ComingSoon"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "GitOpticon",
+            "url": "https://gitopticon.com"
+        },
+        "featureList": [
+            "AI-generated security digests",
+            "Automated PR guidance",
+            "Natural language codebase queries",
+            "Jira and GitHub integration",
+            "Policy-based alerting"
+        ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+
+    <!-- Tailwind CSS (compiled locally) -->
+    <link href="assets/css/styles.css" rel="stylesheet"/>
+
+    <!-- Flowbite CSS -->
+    <link href="assets/vendor/flowbite/css/flowbite.min.css" rel="stylesheet"/>
+
+    <\!-- Animations CSS -->
+    <link href="assets/css/animations.css" rel="stylesheet"/>
+</head>
+<body class="antialiased bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
+
+    <!-- Skip to Content Link (Accessibility) -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[60] focus:px-4 focus:py-2 focus:bg-blue-600 focus:text-white focus:rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+        Skip to main content
+    </a>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+        <div style="max-width: 1200px; margin: 0 auto;" class="px-4">
+            <div class="flex items-center justify-between" style="height: 64px;">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center gap-2">
+                    <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                    </svg>
+                    <span class="text-xl font-bold text-gray-900 dark:text-white">GitOpticon</span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden lg:flex items-center gap-8">
+                    <a href="#how-it-works" class="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">How It Works</a>
+                    <a href="#digest-demo" class="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Features</a>
+                    <a href="#use-cases" class="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Use Cases</a>
+                    <a href="#contact" class="text-sm font-medium text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="hidden lg:flex items-center gap-3">
+                    <a href="#" class="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors">
+                        Sign In
+                    </a>
+                    <a href="#contact" class="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors">
+                        Request Demo
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="lg:hidden inline-flex items-center justify-center p-2 text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-colors">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 hidden" role="dialog" aria-modal="true">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-gray-900/50 dark:bg-gray-900/80 backdrop-blur-sm" id="mobile-menu-backdrop"></div>
+
+        <!-- Menu Panel -->
+        <div class="fixed top-0 right-0 bottom-0 w-[300px] bg-white dark:bg-gray-800 shadow-xl">
+            <!-- Header -->
+            <div class="flex items-center justify-between p-4 border-b border-gray-200 dark:border-gray-700">
+                <h3 class="text-sm font-semibold text-gray-900 dark:text-white uppercase tracking-wide">Menu</h3>
+                <button id="mobile-menu-close" class="inline-flex items-center justify-center p-2 text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="flex flex-col gap-3 p-4">
+                <a href="#how-it-works" class="mobile-menu-link text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">How It Works</a>
+                <a href="#digest-demo" class="mobile-menu-link text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Features</a>
+                <a href="#use-cases" class="mobile-menu-link text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Use Cases</a>
+                <a href="#contact" class="mobile-menu-link text-sm font-medium text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
+
+                <div class="border-t border-gray-200 dark:border-gray-700 my-2"></div>
+
+                <a href="#" class="inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-colors">Sign In</a>
+                <a href="#contact" class="mobile-menu-link inline-flex items-center gap-2 px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors">Request Demo</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content (pt-16 for fixed nav, pb-8 for footer spacing) -->
+    <main id="main-content" class="pb-8" style="padding-top: 64px;">
+        <!-- ============================================================
+     SECTION 1: HERO
+     Primary message + Digest preview
+     ============================================================ -->
+<section id="hero" class="max-w-7xl mx-auto px-4 py-16 lg:py-24">
+    <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+        <!-- Left: Copy -->
+        <div class="flex-1 max-w-xl">
+            <div class="mb-4 hero-animate" style="--delay: 0;">
+                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 rounded-full">
+                    For Security & Architecture Teams
+                </span>
+            </div>
+            <h1 class="text-4xl lg:text-5xl font-bold mb-6 text-gray-900 dark:text-white leading-tight hero-animate" style="--delay: 1;">
+                See the work you'd otherwise miss
+            </h1>
+            <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed hero-animate" style="--delay: 2;">
+                Gitopticon monitors your entire product lifecycle—from Jira epics to GitHub PRs—and tells your team what needs attention before it reaches production.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 mb-6 hero-animate" style="--delay: 3;">
+                <a href="#contact" class="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all shadow-lg hover:shadow-xl">
+                    Request a Demo
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                    </svg>
+                </a>
+                <a href="#how-it-works" class="inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 border-2 border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 transition-all">
+                    See How It Works
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Right: Digest Preview -->
+        <div class="flex-1 w-full max-w-lg hero-card-animate">
+            <div class="relative">
+                <!-- Glow effect -->
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-400 to-purple-600 rounded-2xl blur-3xl opacity-20"></div>
+
+                <!-- Digest Card -->
+                <div class="relative bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-2xl overflow-hidden">
+                    <!-- Header -->
+                    <div class="px-5 py-4 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z"/>
+                                </svg>
+                                <span class="font-semibold text-gray-900 dark:text-white text-sm">Weekly Security Digest</span>
+                            </div>
+                            <span class="text-xs text-gray-500 dark:text-gray-400">Jan 20-27</span>
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="p-5">
+                        <!-- Stats -->
+                        <div class="flex items-center gap-4 mb-4 text-sm">
+                            <span class="text-blue-600 dark:text-blue-400 font-semibold">10 matched items</span>
+                            <span class="text-gray-400 dark:text-gray-500">|</span>
+                            <span class="text-gray-500 dark:text-gray-400">20 total changes</span>
+                        </div>
+
+                        <!-- Executive Summary -->
+                        <div class="mb-4">
+                            <h4 class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-2">Executive Summary</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-300 line-clamp-3">
+                                Key initiatives underway regarding PII and financial data handling, including fraud detection capabilities and credit bureau API integration...
+                            </p>
+                        </div>
+
+                        <!-- Worth Reviewing -->
+                        <div>
+                            <h4 class="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wide mb-3">Worth Reviewing</h4>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-100 dark:border-blue-800/30">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-xs font-mono font-medium text-blue-600 dark:text-blue-400">MP-9</span>
+                                        <span class="text-sm text-gray-700 dark:text-gray-300">Add fraud detection capabilities</span>
+                                    </div>
+                                    <span class="px-2 py-0.5 text-xs font-medium bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded">NEW</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-100 dark:border-gray-600/30">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-xs font-mono font-medium text-gray-500 dark:text-gray-400">MP-6</span>
+                                        <span class="text-sm text-gray-700 dark:text-gray-300">Integrate credit bureau APIs</span>
+                                    </div>
+                                    <span class="px-2 py-0.5 text-xs font-medium bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 rounded">NEW</span>
+                                </div>
+                                <div class="flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-100 dark:border-gray-600/30">
+                                    <div class="flex items-center gap-3">
+                                        <span class="text-xs font-mono font-medium text-gray-500 dark:text-gray-400">MP-19</span>
+                                        <span class="text-sm text-gray-700 dark:text-gray-300">Security audit and pen testing</span>
+                                    </div>
+                                    <span class="px-2 py-0.5 text-xs font-medium bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 rounded">IN PROGRESS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     SECTION 2: PROBLEM STATEMENT
+     Articulate the pain points
+     ============================================================ -->
+<section id="problem" class="bg-gray-900 dark:bg-gray-950 py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <span class="inline-block px-3 py-1 text-sm font-medium text-red-400 bg-red-900/30 rounded-full mb-4">
+                The Challenge
+            </span>
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4">
+                AI coding tools have accelerated development velocity.
+            </h2>
+            <p class="text-xl text-gray-400 max-w-3xl mx-auto">
+                Your security and architecture teams can't keep up.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <!-- Pain Point 1 -->
+            <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-red-900/30 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Reactive</h3>
+                <p class="text-sm text-gray-400">
+                    You rely on teams coming to you. Critical work slips through the cracks.
+                </p>
+            </div>
+
+            <!-- Pain Point 2 -->
+            <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-red-900/30 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Manual</h3>
+                <p class="text-sm text-gray-400">
+                    Reviewing Jira boards and PRs manually doesn't scale with velocity.
+                </p>
+            </div>
+
+            <!-- Pain Point 3 -->
+            <div class="bg-gray-800/50 border border-gray-700 rounded-xl p-6 text-center">
+                <div class="w-12 h-12 mx-auto mb-4 rounded-full bg-red-900/30 flex items-center justify-center">
+                    <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88"/>
+                    </svg>
+                </div>
+                <h3 class="text-lg font-semibold text-white mb-2">Blind Spots</h3>
+                <p class="text-sm text-gray-400">
+                    You don't know what you don't know. Issues surface too late.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     SECTION 3: HOW IT WORKS
+     Connect → Monitor → Act
+     ============================================================ -->
+<section id="how-it-works" class="max-w-7xl mx-auto px-4 py-16 lg:py-20">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-gray-900 dark:text-white">How Gitopticon Works</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            Connect your tools, define what matters, and let AI surface what needs your attention.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <!-- Step 1: Connect -->
+        <div class="relative">
+            <div class="text-center">
+                <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
+                    <svg class="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"/>
+                    </svg>
+                </div>
+                <div class="inline-block px-3 py-1 text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 rounded-full mb-3">Step 1</div>
+                <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Connect</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                    Link your Jira and GitHub accounts. Define what topics and patterns matter to your team.
+                </p>
+                <div class="flex items-center justify-center gap-4 mt-4">
+                    <div class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs font-medium text-gray-600 dark:text-gray-300">Jira</div>
+                    <div class="px-3 py-1 bg-gray-100 dark:bg-gray-700 rounded text-xs font-medium text-gray-600 dark:text-gray-300">GitHub</div>
+                </div>
+            </div>
+            <!-- Arrow (hidden on mobile) -->
+            <div class="hidden md:block absolute top-8 -right-4 w-8 text-gray-300 dark:text-gray-600">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Step 2: Monitor -->
+        <div class="relative">
+            <div class="text-center">
+                <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center">
+                    <svg class="w-8 h-8 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z"/>
+                    </svg>
+                </div>
+                <div class="inline-block px-3 py-1 text-xs font-semibold text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30 rounded-full mb-3">Step 2</div>
+                <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Monitor</h3>
+                <p class="text-gray-600 dark:text-gray-400">
+                    AI analyzes every epic, feature, and PR. It understands context and identifies what's relevant to you.
+                </p>
+                <div class="flex items-center justify-center gap-2 mt-4">
+                    <div class="px-3 py-1 bg-purple-50 dark:bg-purple-900/30 rounded text-xs font-medium text-purple-600 dark:text-purple-400">AI-Powered</div>
+                </div>
+            </div>
+            <!-- Arrow (hidden on mobile) -->
+            <div class="hidden md:block absolute top-8 -right-4 w-8 text-gray-300 dark:text-gray-600">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Step 3: Act -->
+        <div class="text-center">
+            <div class="w-16 h-16 mx-auto mb-6 rounded-2xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+                <svg class="w-8 h-8 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"/>
+                </svg>
+            </div>
+            <div class="inline-block px-3 py-1 text-xs font-semibold text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30 rounded-full mb-3">Step 3</div>
+            <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">Act</h3>
+            <p class="text-gray-600 dark:text-gray-400">
+                Get digests, PR guidance, and answers to questions—all delivered where you work.
+            </p>
+            <div class="flex items-center justify-center gap-2 mt-4">
+                <div class="px-3 py-1 bg-green-50 dark:bg-green-900/30 rounded text-xs font-medium text-green-600 dark:text-green-400">Same-day value</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     SECTION 4: DIGEST DEMO
+     Interactive digest showcase
+     ============================================================ -->
+<section id="digest-demo" class="bg-gray-50 dark:bg-gray-900 py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <!-- Left: Copy -->
+            <div class="flex-1 max-w-lg">
+                <span class="inline-block px-3 py-1 text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/30 rounded-full mb-4">
+                    Proactive Intelligence
+                </span>
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+                    Know what's happening without having to ask
+                </h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                    Gitopticon sends you AI-generated digests summarizing work that matches your team's interests. No more hunting through Jira or Slack.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span class="text-gray-700 dark:text-gray-300">AI-generated executive summaries of relevant work</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span class="text-gray-700 dark:text-gray-300">Matched to your team's stated interests and policies</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <svg class="w-6 h-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        <span class="text-gray-700 dark:text-gray-300">Delivered via email or directly in your dashboard</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Right: Digest Preview (larger version) - Animated -->
+            <div class="flex-1 w-full max-w-xl">
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-xl overflow-hidden">
+                    <!-- Email Header -->
+                    <div class="px-6 py-4 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center">
+                                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-sm font-semibold text-gray-900 dark:text-white">Gitopticon</div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400">digests@gitopticon.com</div>
+                            </div>
+                        </div>
+                        <div class="text-sm font-medium text-gray-900 dark:text-white">
+                            Your Weekly Security Digest — 10 items need review
+                        </div>
+                    </div>
+
+                    <!-- Digest Content -->
+                    <div class="p-6">
+                        <!-- Summary - Animated -->
+                        <div class="mb-6 p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-100 dark:border-blue-800/30 digest-item" style="--delay: 0;">
+                            <h4 class="text-sm font-semibold text-blue-900 dark:text-blue-300 mb-2">Executive Summary</h4>
+                            <p class="text-sm text-blue-800 dark:text-blue-200">
+                                This week saw significant activity around PII handling and payment systems. The fraud detection initiative (MP-9) has begun, and credit bureau integrations (MP-6) are progressing. A security audit is in progress for the core platform.
+                            </p>
+                        </div>
+
+                        <!-- Items -->
+                        <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-3 digest-item" style="--delay: 1;">Worth Reviewing</h4>
+                        <div class="space-y-3">
+                            <!-- Item 1: MP-9 HIGH -->
+                            <div class="flex items-start gap-3 p-3 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-100 dark:border-red-800/30 digest-item" style="--delay: 2;">
+                                <div class="w-2 h-2 mt-2 rounded-full bg-red-500 flex-shrink-0"></div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-xs font-mono font-semibold text-red-600 dark:text-red-400">MP-9</span>
+                                        <span class="px-1.5 py-0.5 text-xs font-medium bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-400 rounded">HIGH</span>
+                                    </div>
+                                    <p class="text-sm font-medium text-gray-900 dark:text-white">Add fraud detection capabilities</p>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Matches: PII, Financial Data, Fraud</p>
+                                </div>
+                            </div>
+                            <!-- Item 2: MP-6 MEDIUM -->
+                            <div class="flex items-start gap-3 p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border border-yellow-100 dark:border-yellow-800/30 digest-item" style="--delay: 3;">
+                                <div class="w-2 h-2 mt-2 rounded-full bg-yellow-500 flex-shrink-0"></div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-xs font-mono font-semibold text-yellow-600 dark:text-yellow-400">MP-6</span>
+                                        <span class="px-1.5 py-0.5 text-xs font-medium bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 rounded">MEDIUM</span>
+                                    </div>
+                                    <p class="text-sm font-medium text-gray-900 dark:text-white">Integrate credit bureau APIs</p>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Matches: External APIs, PII</p>
+                                </div>
+                            </div>
+                            <!-- Item 3: MP-19 -->
+                            <div class="flex items-start gap-3 p-3 bg-gray-50 dark:bg-gray-700/50 rounded-lg border border-gray-200 dark:border-gray-600/30 digest-item" style="--delay: 4;">
+                                <div class="w-2 h-2 mt-2 rounded-full bg-blue-500 flex-shrink-0"></div>
+                                <div class="flex-1">
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <span class="text-xs font-mono font-semibold text-gray-600 dark:text-gray-400">MP-19</span>
+                                    </div>
+                                    <p class="text-sm font-medium text-gray-900 dark:text-white">Security audit and penetration testing</p>
+                                    <p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Matches: Security, Compliance</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- More items text -->
+                        <p class="text-xs text-gray-500 dark:text-gray-400 mt-4 text-center digest-item" style="--delay: 5;">+ 7 more items in your dashboard</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     SECTION 5: PR GUIDANCE DEMO
+     Real-time feedback on PRs
+     ============================================================ -->
+<section id="pr-guidance" class="max-w-7xl mx-auto px-4 py-16 lg:py-20">
+    <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+        <!-- Right: Copy -->
+        <div class="flex-1 max-w-lg">
+            <span class="inline-block px-3 py-1 text-sm font-medium text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-900/30 rounded-full mb-4">
+                Real-Time Guidance
+            </span>
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+                Catch issues before they reach production
+            </h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                Gitopticon automatically reviews PRs and posts guidance based on your team's policies. Engineers get immediate feedback, and you get notified of high-risk changes.
+            </p>
+            <ul class="space-y-4">
+                <li class="flex items-start gap-3">
+                    <svg class="w-6 h-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="text-gray-700 dark:text-gray-300">Configurable rules based on your security policies</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-6 h-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="text-gray-700 dark:text-gray-300">Risk scores with actionable recommendations</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-6 h-6 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                    </svg>
+                    <span class="text-gray-700 dark:text-gray-300">Code examples showing correct patterns</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Left: PR Comment Preview -->
+        <div class="flex-1 w-full max-w-xl">
+            <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-xl overflow-hidden">
+                <!-- File Header -->
+                <div class="px-4 py-3 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900 pr-item" style="--delay: 0;">
+                    <div class="flex items-center gap-2 text-sm">
+                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/>
+                        </svg>
+                        <span class="font-mono text-gray-700 dark:text-gray-300">backend/settings/base.py</span>
+                    </div>
+                </div>
+
+                <!-- Code Snippet -->
+                <div class="px-4 py-3 bg-gray-900 font-mono text-sm pr-item" style="--delay: 1;">
+                    <div class="text-gray-500">391</div>
+                    <div class="text-green-400 ml-8">"https://cdn.jsdelivr.net",</div>
+                    <div class="text-green-400 ml-8">"https://unpkg.com",  <span class="text-gray-500"># Trix editor</span></div>
+                    <div class="text-green-400 ml-8">"https://js-agent.newrelic.com",</div>
+                </div>
+
+                <!-- Bot Comment -->
+                <div class="p-4 border-t border-gray-200 dark:border-gray-700 pr-slide-left" style="--delay: 2;">
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+                            </svg>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="font-semibold text-gray-900 dark:text-white text-sm">gitopticon</span>
+                                <span class="px-1.5 py-0.5 text-xs font-medium bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded">bot</span>
+                            </div>
+
+                            <!-- Alert Box -->
+                            <div class="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800/30 mb-4 pr-item" style="--delay: 3;">
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-red-600 dark:text-red-400 font-semibold">Security Review Required</span>
+                                    <span class="px-2 py-0.5 text-xs font-bold bg-red-100 dark:bg-red-900/40 text-red-700 dark:text-red-400 rounded">Risk: 8/10</span>
+                                </div>
+                                <p class="text-sm text-red-800 dark:text-red-200">
+                                    CSP headers are being modified to allow external resources. This directly impacts application security posture.
+                                </p>
+                            </div>
+
+                            <!-- Recommendation -->
+                            <div class="mb-4 pr-item" style="--delay: 4;">
+                                <h5 class="text-sm font-semibold text-gray-900 dark:text-white mb-2 flex items-center gap-2">
+                                    <span>Recommended Fix</span>
+                                </h5>
+                                <p class="text-sm text-gray-600 dark:text-gray-400">
+                                    Verify unpkg.com is a trusted source. Consider restricting <code class="px-1 py-0.5 bg-gray-100 dark:bg-gray-700 rounded text-xs">'unsafe-inline'</code> and <code class="px-1 py-0.5 bg-gray-100 dark:bg-gray-700 rounded text-xs">'unsafe-eval'</code> to specific directives.
+                                </p>
+                            </div>
+
+                            <!-- Policy Reference -->
+                            <div class="text-xs text-gray-500 dark:text-gray-400 border-t border-gray-200 dark:border-gray-700 pt-3 pr-item" style="--delay: 5;">
+                                <span class="font-medium">Policy:</span> Secure Configuration Management, CSP Guidelines
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     SECTION 6: SMART CONVERSATIONS
+     Ask questions about your codebase
+     ============================================================ -->
+<section id="conversations" class="bg-gray-50 dark:bg-gray-900 py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <!-- Left: Copy -->
+            <div class="flex-1 max-w-lg">
+                <span class="inline-block px-3 py-1 text-sm font-medium text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30 rounded-full mb-4">
+                    Smart Conversations
+                </span>
+                <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-gray-900 dark:text-white">
+                    Ask anything about your codebase
+                </h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                    Query your entire product lifecycle using natural language. Get answers with citations, not just guesses.
+                </p>
+
+                <div class="space-y-3">
+                    <p class="text-sm font-medium text-gray-700 dark:text-gray-300">Example questions:</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm text-gray-600 dark:text-gray-400">"Where do we have PII?"</span>
+                        <span class="px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm text-gray-600 dark:text-gray-400">"What handles payment data?"</span>
+                        <span class="px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm text-gray-600 dark:text-gray-400">"Show recent auth changes"</span>
+                        <span class="px-3 py-1.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-sm text-gray-600 dark:text-gray-400">"Who's working on GDPR?"</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Chat Interface -->
+            <div class="flex-1 w-full max-w-xl">
+                <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-xl overflow-hidden">
+                    <!-- Chat Header -->
+                    <div class="px-6 py-4 border-b border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-900">
+                        <div class="flex items-center gap-2">
+                            <svg class="w-5 h-5 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"/>
+                            </svg>
+                            <span class="font-semibold text-gray-900 dark:text-white text-sm">Ask Gitopticon</span>
+                        </div>
+                    </div>
+
+                    <!-- Chat Messages -->
+                    <div class="p-6 space-y-4">
+                        <!-- User Message -->
+                        <div class="flex justify-end chat-user">
+                            <div class="max-w-[80%] px-4 py-3 bg-blue-600 text-white rounded-2xl rounded-br-md">
+                                <p class="text-sm">Where do we have PII?</p>
+                            </div>
+                        </div>
+
+                        <!-- Bot Response -->
+                        <div class="flex justify-start chat-bot">
+                            <div class="max-w-[90%] px-4 py-3 bg-gray-100 dark:bg-gray-700 rounded-2xl rounded-bl-md">
+                                <p class="text-sm text-gray-800 dark:text-gray-200 mb-3 chat-item" style="--delay: 0;">
+                                    The organization handles Personally Identifiable Information (PII) in several systems:
+                                </p>
+                                <ul class="space-y-2 mb-3">
+                                    <li class="flex items-start gap-2 text-sm chat-item" style="--delay: 1;">
+                                        <span class="text-blue-600 dark:text-blue-400 font-semibold">[1]</span>
+                                        <span class="text-gray-700 dark:text-gray-300">Credit bureau integrations for automated report retrieval</span>
+                                    </li>
+                                    <li class="flex items-start gap-2 text-sm chat-item" style="--delay: 2;">
+                                        <span class="text-blue-600 dark:text-blue-400 font-semibold">[2]</span>
+                                        <span class="text-gray-700 dark:text-gray-300">OCR for extracting data from uploaded documents</span>
+                                    </li>
+                                    <li class="flex items-start gap-2 text-sm chat-item" style="--delay: 3;">
+                                        <span class="text-blue-600 dark:text-blue-400 font-semibold">[7]</span>
+                                        <span class="text-gray-700 dark:text-gray-300">E-commerce microservices application</span>
+                                    </li>
+                                </ul>
+                                <div class="border-t border-gray-200 dark:border-gray-600 pt-3 chat-item" style="--delay: 4;">
+                                    <p class="text-xs font-medium text-gray-500 dark:text-gray-400 mb-2">Citations:</p>
+                                    <div class="space-y-1">
+                                        <a href="#" class="block text-xs text-blue-600 dark:text-blue-400 hover:underline">[1] MP-6: Integrate credit bureau APIs</a>
+                                        <a href="#" class="block text-xs text-blue-600 dark:text-blue-400 hover:underline">[2] MP-8: Add OCR for document extraction</a>
+                                        <a href="#" class="block text-xs text-blue-600 dark:text-blue-400 hover:underline">[7] acme-corp/microservices-demo-gcp</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Input (disabled/decorative) -->
+                    <div class="px-6 py-4 border-t border-gray-200 dark:border-gray-700">
+                        <div class="flex items-center gap-3">
+                            <input type="text" placeholder="Ask a question..." disabled class="flex-1 px-4 py-2 bg-gray-50 dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg text-sm text-gray-400 dark:text-gray-500 cursor-not-allowed">
+                            <button disabled class="p-2 bg-gray-200 dark:bg-gray-600 rounded-lg cursor-not-allowed">
+                                <svg class="w-5 h-5 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     SECTION 7: USE CASES BY PERSONA
+     Security Arch, Enterprise Arch, Privacy
+     ============================================================ -->
+<section id="use-cases" class="max-w-7xl mx-auto px-4 py-16 lg:py-20">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Built for Enablement Teams</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+            Whether you're in security, architecture, or privacy, Gitopticon helps you stay ahead of development.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- Security Architecture -->
+        <div class="bg-gradient-to-br from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-2xl p-8 border border-red-100 dark:border-red-800/30">
+            <div class="w-12 h-12 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-red-600 dark:text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+                </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Security Architecture</h3>
+            <p class="text-gray-700 dark:text-gray-300 mb-6">
+                Stop chasing down teams for security reviews. Know what needs your attention automatically.
+            </p>
+            <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                    <span class="text-sm text-gray-700 dark:text-gray-300">Catch security issues in PRs before merge</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                    <span class="text-sm text-gray-700 dark:text-gray-300">Get alerts on sensitive code changes</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                    <span class="text-sm text-gray-700 dark:text-gray-300">Query: "Where is authentication handled?"</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Enterprise Architecture -->
+        <div class="bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-2xl p-8 border border-blue-100 dark:border-blue-800/30">
+            <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/>
+                </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Enterprise Architecture</h3>
+            <p class="text-gray-700 dark:text-gray-300 mb-6">
+                Monitor architectural decisions and technology adoption across all teams.
+            </p>
+            <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                    <span class="text-sm text-gray-700 dark:text-gray-300">Track pattern adoption and tech debt</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                    <span class="text-sm text-gray-700 dark:text-gray-300">Review integration and API decisions</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                    <span class="text-sm text-gray-700 dark:text-gray-300">Query: "What services use Kafka?"</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Privacy Teams -->
+        <div class="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl p-8 border border-green-100 dark:border-green-800/30">
+            <div class="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center mb-6">
+                <svg class="w-6 h-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/>
+                </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3 text-gray-900 dark:text-white">Privacy Teams</h3>
+            <p class="text-gray-700 dark:text-gray-300 mb-6">
+                Track PII handling and ensure compliance with data protection regulations.
+            </p>
+            <ul class="space-y-3">
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                    <span class="text-sm text-gray-700 dark:text-gray-300">Monitor PII handling across products</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                    <span class="text-sm text-gray-700 dark:text-gray-300">Ensure GDPR/CCPA compliance</span>
+                </li>
+                <li class="flex items-start gap-3">
+                    <svg class="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/>
+                    </svg>
+                    <span class="text-sm text-gray-700 dark:text-gray-300">Query: "What stores customer data?"</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     SECTION 8: FAQ
+     Condensed FAQ section
+     ============================================================ -->
+<section id="faq" class="bg-gray-50 dark:bg-gray-900 py-16 lg:py-20">
+    <div class="max-w-3xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-4 text-gray-900 dark:text-white">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="space-y-4">
+            <!-- FAQ 1 -->
+            <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl">
+                <button class="w-full px-6 py-4 text-left flex items-center justify-between" onclick="this.parentElement.querySelector('.faq-answer').classList.toggle('hidden')">
+                    <span class="font-semibold text-gray-900 dark:text-white">How does Gitopticon connect to my tools?</span>
+                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                    </svg>
+                </button>
+                <div class="faq-answer hidden px-6 pb-4">
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Gitopticon uses secure OAuth integrations with Jira and GitHub. You grant read access to your repositories and projects, and we automatically sync your data. Your source code never leaves your Git provider—we only analyze metadata and summaries.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl">
+                <button class="w-full px-6 py-4 text-left flex items-center justify-between" onclick="this.parentElement.querySelector('.faq-answer').classList.toggle('hidden')">
+                    <span class="font-semibold text-gray-900 dark:text-white">What data does Gitopticon collect?</span>
+                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                    </svg>
+                </button>
+                <div class="faq-answer hidden px-6 pb-4">
+                    <p class="text-gray-600 dark:text-gray-400">
+                        We collect Jira ticket metadata (titles, descriptions, labels, status) and GitHub PR summaries (titles, descriptions, changed files). We do not store your actual source code. All data is encrypted at rest and in transit.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl">
+                <button class="w-full px-6 py-4 text-left flex items-center justify-between" onclick="this.parentElement.querySelector('.faq-answer').classList.toggle('hidden')">
+                    <span class="font-semibold text-gray-900 dark:text-white">How is this different from code scanning tools?</span>
+                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                    </svg>
+                </button>
+                <div class="faq-answer hidden px-6 pb-4">
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Code scanning tools like Snyk or SonarQube find vulnerabilities in code. Gitopticon is about visibility and governance—helping enablement teams understand what work is happening across the organization, not just what vulnerabilities exist. We're complementary to security scanning, not a replacement.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl">
+                <button class="w-full px-6 py-4 text-left flex items-center justify-between" onclick="this.parentElement.querySelector('.faq-answer').classList.toggle('hidden')">
+                    <span class="font-semibold text-gray-900 dark:text-white">How quickly can we get started?</span>
+                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5"/>
+                    </svg>
+                </button>
+                <div class="faq-answer hidden px-6 pb-4">
+                    <p class="text-gray-600 dark:text-gray-400">
+                        Setup takes about 15 minutes—connect your Jira and GitHub accounts, configure your interests and rules, and you're done. Most teams start seeing relevant work surfaced within the first day as data syncs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     SECTION 9: CONTACT CTA
+     Request a demo form
+     ============================================================ -->
+<section id="contact" class="max-w-7xl mx-auto px-4 py-16 lg:py-20">
+    <div class="max-w-4xl mx-auto">
+        <div class="rounded-3xl p-8 lg:p-12 text-center shadow-lg" style="background: linear-gradient(to bottom right, #2563eb, #4338ca);">
+            <h2 class="text-3xl lg:text-4xl font-bold text-white mb-4 drop-shadow-md">
+                Ready to see what you've been missing?
+            </h2>
+            <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto drop-shadow-sm">
+                Request a demo and we'll show you how Gitopticon can help your team stay ahead of your organization's development velocity.
+            </p>
+
+            <!-- Contact Form -->
+            <div class="max-w-md mx-auto bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl">
+                <!-- Success Message -->
+                <div id="form-success" class="hidden text-center py-8">
+                    <svg class="w-16 h-16 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Thank you!</h3>
+                    <p class="text-gray-600 dark:text-gray-400">We'll be in touch within 24 hours to schedule your demo.</p>
+                </div>
+                <form id="contact-form" action="https://formspree.io/f/xvzawpjz" method="POST" class="space-y-4" novalidate>
+                    <input type="hidden" name="_subject" value="GitOpticon Demo Request">
+                    <!-- Honeypot field for spam protection - hidden from humans -->
+                    <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1 text-left">Name</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                        <p id="name-error" class="hidden mt-1 text-sm text-red-600 dark:text-red-400 text-left"></p>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1 text-left">Work Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors">
+                        <p id="email-error" class="hidden mt-1 text-sm text-red-600 dark:text-red-400 text-left"></p>
+                    </div>
+                    <div>
+                        <label for="company" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1 text-left">Company</label>
+                        <input type="text" id="company" name="company" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                    </div>
+                    <div>
+                        <label for="team" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1 text-left">Your Team</label>
+                        <select id="team" name="team" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            <option value="">Select your team...</option>
+                            <option value="security">Security Architecture</option>
+                            <option value="enterprise">Enterprise Architecture</option>
+                            <option value="privacy">Privacy / Compliance</option>
+                            <option value="devex">Developer Experience</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="w-full px-6 py-3 text-base font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all">
+                        Request Demo
+                    </button>
+                </form>
+                <p class="text-xs text-gray-500 dark:text-gray-400 mt-4">
+                    We'll reach out within 24 hours to schedule your demo.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 48px 16px;">
+            <div class="flex flex-wrap gap-8">
+                <!-- Brand -->
+                <div style="flex: 1 1 250px;">
+                    <div class="flex items-center gap-2" style="margin-bottom: 16px;">
+                        <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+                        </svg>
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">GitOpticon</span>
+                    </div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">
+                        Development lifecycle governance and security automation for modern teams.
+                    </p>
+                </div>
+
+                <!-- Product -->
+                <div style="flex: 1 1 150px;">
+                    <h4 class="font-semibold text-gray-900 dark:text-white" style="margin-bottom: 16px;">Product</h4>
+                    <div class="flex flex-col gap-2 text-sm text-gray-600 dark:text-gray-400">
+                        <a href="#digest-demo" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Features</a>
+                        <a href="#how-it-works" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">How It Works</a>
+                        <a href="#use-cases" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Use Cases</a>
+                        <a href="#faq" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">FAQ</a>
+                    </div>
+                </div>
+
+                <!-- Company -->
+                <div style="flex: 1 1 150px;">
+                    <h4 class="font-semibold text-gray-900 dark:text-white" style="margin-bottom: 16px;">Company</h4>
+                    <div class="flex flex-col gap-2 text-sm text-gray-600 dark:text-gray-400">
+                        <a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
+                        <a href="privacy.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Privacy</a>
+                        <a href="terms.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Terms</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-200 dark:border-gray-700 text-center text-sm text-gray-600 dark:text-gray-400" style="margin-top: 32px; padding-top: 32px;">
+                <p>&copy; 2025 GitOpticon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent" class="fixed bottom-0 left-0 right-0 z-50 hidden">
+        <div class="bg-white dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 shadow-lg">
+            <div style="max-width: 1200px; margin: 0 auto;" class="px-4 py-4">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <p class="text-sm text-gray-600 dark:text-gray-400 text-center sm:text-left">
+                        We use cookies to improve your experience. By continuing to use this site, you agree to our
+                        <a href="privacy.html" class="text-blue-600 dark:text-blue-400 hover:underline">Privacy Policy</a>.
+                    </p>
+                    <div class="flex items-center gap-3 flex-shrink-0">
+                        <button id="cookie-decline" class="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-colors">
+                            Decline
+                        </button>
+                        <button id="cookie-accept" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors">
+                            Accept
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flowbite JS -->
+    <script src="assets/vendor/flowbite/js/flowbite.min.js"></script>
+
+    <!-- Mobile Menu & Smooth Scroll -->
+
+    <\!-- Main JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+    <\!-- Animations JavaScript -->
+    <script src="assets/js/animations.js"></script>
+</body>
+</html>

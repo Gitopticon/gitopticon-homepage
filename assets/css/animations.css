@@ -1,0 +1,135 @@
+/* ===========================================
+   HERO SECTION - Page load animation
+   =========================================== */
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroSlideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-animate {
+    opacity: 0;
+    animation: heroFadeIn 0.6s ease-out forwards;
+    animation-delay: calc(var(--delay, 0) * 0.12s);
+}
+
+.hero-card-animate {
+    opacity: 0;
+    animation: heroSlideInRight 0.7s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* ===========================================
+   SCROLL-TRIGGERED ANIMATIONS
+   Shared keyframes for digest, PR, and chat
+   =========================================== */
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Digest Demo items */
+.digest-item {
+    opacity: 0;
+    transform: translateY(12px);
+}
+
+.digest-item.animate-visible {
+    animation: fadeSlideIn 0.5s ease-out forwards;
+    animation-delay: calc(var(--delay, 0) * 0.15s);
+}
+
+/* PR Guidance items */
+.pr-item {
+    opacity: 0;
+    transform: translateY(12px);
+}
+
+.pr-item.animate-visible {
+    animation: fadeSlideIn 0.5s ease-out forwards;
+    animation-delay: calc(var(--delay, 0) * 0.12s);
+}
+
+.pr-slide-left {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.pr-slide-left.animate-visible {
+    animation: slideInLeft 0.6s ease-out forwards;
+    animation-delay: calc(var(--delay, 0) * 0.12s);
+}
+
+/* Chat/Conversations items */
+.chat-item {
+    opacity: 0;
+}
+
+.chat-item.animate-visible {
+    animation: fadeSlideIn 0.5s ease-out forwards;
+    animation-delay: calc(var(--delay, 0) * 0.2s);
+}
+
+.chat-user {
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+.chat-user.animate-visible {
+    animation: slideInRight 0.5s ease-out forwards;
+    animation-delay: 0s;
+}
+
+.chat-bot {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.chat-bot.animate-visible {
+    animation: slideInLeft 0.5s ease-out forwards;
+    animation-delay: 0.3s;
+}
